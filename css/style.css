@@ -1,0 +1,240 @@
+/* Basic styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ! start of the navigation bar */
+nav{
+    background-color: #FDF8F6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    font-family: "DM Sans", sans-serif;
+    z-index: 1000;
+}
+
+.nav_logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav_logo img {
+    width: 50px;
+    height: 50px;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.nav_logo span {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.nav_logo span p:first-child {
+    font-weight: 700;
+    color: rgb(17, 24, 39);
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.nav_logo span p:nth-child(2){
+    font-weight: 400;
+    color: rgb(75, 85, 99);
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.nav_links ul{
+    display: flex;
+    align-items: center ;
+    gap: 34px;
+}
+
+.nav_links ul li a{
+    color: #3A4455;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    transition: 0.3s ease;
+}
+
+.nav_links ul li a:hover{
+    color: rgb(132, 99, 88);
+}
+
+.nav-btn-order{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav-btn-order a {
+    color: #ffffff;
+    background-color: rgb(132, 99, 88) ;
+    font-size: 14px ;
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.nav-btn-order a:hover{
+    background-color: #6f574d;
+}
+
+/* ! end of the navigation bar */
+
+/*? start of the main section*/
+
+.Main_Section{
+    background-color: #FDF8F6;
+    min-height: 100vh;
+    padding: 90px 10% 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.Main_Section::before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background-color: #FFD83D;
+    border-radius: 50%;
+    bottom: 45px;
+    right: 42%;
+    filter: blur(8px);
+    z-index: 0;
+}
+
+.Main_Section::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #E8D6CF;
+    border-radius: 50%;
+    top: 100px;
+    right: 10%;
+    filter: blur(18px);
+    z-index: 0;
+}
+
+.Main_Section_Content,
+.Main_Section_img {
+    position: relative;
+    z-index: 1;
+}
+
+.Main_Section_Text .P{
+    color: rgb(151, 118, 105);
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 28px;
+}
+
+.Main_Section_Text h1{
+    color: rgb(17, 24, 39);
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 28px;
+}
+.Main_Section_Text h1 span{
+    color: rgb(151, 118, 105);
+}
+
+.Main_Section_Text .description{
+    color: rgb(75, 85, 99);
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 600px;
+    margin: 0 0 28px;
+}
+
+.Main_Section_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main_Section_img img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Main_Section_btn{
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.Main_Section_btn .Main_Section_btn_menu{
+    color: #ffffff;
+    background-color: rgb(132, 99, 88) ;
+    width: 183px;
+} 
+
+.Main_Section_btn .Main_Section_btn_order {
+    color: rgb(132, 99, 88);
+    background-color: transparent;
+    border: 2px solid rgb(132, 99, 88);
+    width: 170px;
+}
+
+.Main_Section_btn .Main_Section_btn_menu ,
+.Main_Section_btn .Main_Section_btn_order {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 30px;
+    padding: 0 25px;
+    transition: 0.3s ease;
+    height: 52px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+}
+
+.Main_Section_btn .Main_Section_btn_order:hover{
+    background-color:rgb(132, 99, 88) ;
+    color: #ffffff;
+}
+
+.Main_Section_btn .Main_Section_btn_menu:hover{
+    background-color: #6f574d;
+}
+/*? end of the main section*/

@@ -5,16 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roast & Co.</title>
     <link rel="icon" href="images/tab logo.png" type="image/x-icon" >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- * "DM Sans" font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    
+    <!-- * "Playfair Display " font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <!--! start of the navigation bar  -->
     <nav>
         <section class="nav_logo">
-            <img src="images/Main logo.png" alt="logo"  width="50px" height="50px">
+            <img src="images/Main logo.png" alt="logo" >
             <span>
                 <p>Roast & Co.</p>
-                <p>Specialty Coffee Roasters</p>
+                <p >Specialty Coffee Roasters</p>
             </span>
         </section>
         <section class="nav_links">
@@ -28,23 +40,26 @@
         </section>
         <section class="nav-btn-order">
             <span>
-                <img src="images/dark mode.png" alt="dark mode icon" width="20px" height="20px">
+                <i class="fa-regular fa-moon"></i>
             </span>
-            <button>Order online</button>
+            <a href="">Order Online</a>
         </section>
     </nav>
         <!--! End of the navigation bar   -->
 
         <!-- ? start of the main section  -->
         <section class="Main_Section">
+            <section class="Main_Section_Content">
             <section class="Main_Section_Text">
-                <p>Specialty Coffee Roasters</p>
-                <h1>Crafted with <span>Passion & Precision</span></h1>
-                <p>From bean to cup, we obsess over every detail. Experience specialty coffee the way it was meant to be — fresh-roasted, expertly brewed, and served with care.</p>
-            <section>
+                <p class="P">Specialty Coffee Roasters</p>
+                <h1>Crafted with <br><span>Passion & Precision</span></h1>
+                <p class="description">From bean to cup, we obsess over every detail. Experience specialty coffee the way it was meant to be — fresh-roasted, expertly brewed, and served with care.</p>
+            </section>
+            
             <section class="Main_Section_btn">
-                <button>View Our Menu</button>
-                <button>Order Online</button>
+                <a href="#Menu" class="Main_Section_btn_menu">View Our Menu</a>
+                <a href="" class="Main_Section_btn_order">Order Online</a>
+            </section>
             </section>
             <section class="Main_Section_img">
                 <img src="images/p1.jpg" alt="group of coffee cups">
